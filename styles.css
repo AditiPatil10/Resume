@@ -135,7 +135,7 @@ a:hover {
 .top-container,.bottom-container {
   width: 100%;
   height: 100%;
-  animation: pulse 7s infinite;
+  animation: pulse 5s infinite;
   border-radius: 3%;
 }
 
