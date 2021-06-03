@@ -1,18 +1,19 @@
 html{
   padding:40px;
+  padding-top: 0px;
 
 }
 
 body {
   color: #40514E;
   border-top: 10px;
-  margin:0;
+  margin-top: 30px;
   /* text-align: left; */
   font-family: 'Merriweather', serif;
 }
 
 h1 {
-  color: #66BFBF;
+  color: #11999E;
   font-size: 3rem;
   position: static;
   margin-top: 10px;
@@ -68,7 +69,44 @@ a:hover {
   color: #EAF6F6;
 }
 
+.navbar{
+  position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: white;
+    /* padding-bottom: 20px; */
+}
+
+.topnav {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.topnav a {
+  float: left;
+  color: #11999E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #11999E;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+.main {
+  margin-top: 30px;
+}
+
 .top-container {
+  margin-top: 20px;
   background-color: #E4F9F5;
   position: relative;
   padding-top: 35px;
@@ -83,7 +121,7 @@ a:hover {
   padding: 1px;
   margin:0;
   height: 200px;
-  width: 180px;
+  width: 150px;
   border-radius: 50%;
   border-color: #66BFBF;
   border-style: double;
@@ -98,7 +136,7 @@ a:hover {
   margin: 10px;
 }
 
-.personal-details,.objective,.projects{
+.personal-details,.objective,.projects, #contact{
   margin-left: 20px;
   margin-top: 20px;
   margin bottom: 20px;
@@ -132,7 +170,7 @@ a:hover {
   text-align: center;
 }
 
-.top-container,.bottom-container {
+.top-container,.bottom-container,.topnav {
   width: 100%;
   height: 100%;
   animation: pulse 5s infinite;
@@ -141,12 +179,35 @@ a:hover {
 
 @keyframes pulse {
   0% {
-    background-color: ##daeff0;
+    background-color: #daeff0;
   }
   50% {
     background-color: #ABEEF5;
   }
   100% {
-    background-color: ##daeff0;
+    background-color: #daeff0;
   }
+}
+
+#contact{
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin:30px auto 30px auto;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(top bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 20px;
 }
